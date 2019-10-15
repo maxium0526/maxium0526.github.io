@@ -1,0 +1,41 @@
+body {
+	font-family: 'Merriweather', serif;
+}
+
+.link-container{
+	padding: 6.5rem 0 3.5rem 0;
+}
+
+.image-container{
+	position: relative;
+	text-align: center;
+	color: white;
+
+	
+}
+
+.image-container:hover img{
+	filter: brightness(50%);
+}
+
+.image-container img {
+	width: 100%;
+	filter: brightness(25%);
+	transition: filter 0.25s;
+}
+
+/*.image-container > img:hover {
+	filter: brightness(50%);
+}*/
+
+.image-container p {
+	font-size: 18px;
+	color: #ffffff;
+}
+
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
