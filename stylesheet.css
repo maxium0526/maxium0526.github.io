@@ -1,5 +1,23 @@
 body {
 	font-family: 'Merriweather', serif;
+	height: 100%;
+}
+
+#wrapper {
+	min-height: 100%
+}
+
+#content {
+	padding-bottom: 3rem;
+}
+
+#footer {
+	background-color: #113f67;
+	height: 2.5rem;
+	box-sizing: border-box;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
 
 .link-container{
@@ -24,10 +42,6 @@ body {
 	transition: filter 0.25s;
 }
 
-/*.image-container > img:hover {
-	filter: brightness(50%);
-}*/
-
 .image-container p {
 	font-size: 18px;
 	color: #ffffff;
@@ -39,3 +53,4 @@ body {
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+
