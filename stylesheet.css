@@ -4,18 +4,20 @@ body {
 }
 
 #wrapper {
+/*	position: relative;*/
 	min-height: 100%
 }
 
 #content {
-	padding-bottom: 3rem;
+	margin-bottom: -2.5rem;
+	overflow-x: auto;
 }
 
 #footer {
 	background-color: #113f67;
 	height: 2.5rem;
 	box-sizing: border-box;
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	width: 100%;
 }
