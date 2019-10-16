@@ -28,6 +28,7 @@ body {
 
 .link-container{
 	background-color: #e7eaf6;
+	box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
 }
 
 .image-container{
@@ -46,6 +47,7 @@ body {
 	width: 100%;
 	filter: brightness(25%);
 	transition: filter 0.25s;
+	box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
 }
 
 .image-container p {
