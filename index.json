@@ -1,0 +1,17 @@
+[
+	{
+		"name": "Blog",
+		"href": "/blog",
+		"img_src": "/img/blog.png"
+	},
+	{
+		"name": "About Me",
+		"img_src": "/img/about_me.png",
+		"function": "aboutMe"
+	},
+	{
+		"name": "JSGame2",
+		"href": "/JSGame2/front-end/index.html",
+		"img_src": "/img/JSGame2.png"
+	}
+]

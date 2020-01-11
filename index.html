@@ -20,6 +20,10 @@
 
 	<script src="https://maxium0526.github.io/live2d-widget/autoload.js"></script>
 
+	<script type="text/javascript">
+		
+	</script>
+
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 <body>
@@ -32,46 +36,58 @@
 					<p class="h2 text-center">Welcome to Maxium's Website</p>
 					<a href="/about_me/index.html"><p class="text-center">About Me</p></a>
 				</div>
-				<div class="col-10 col-md-10 col-lg-10 col-xl-8 mx-auto my-2 p-0 rounded link-container row">
-					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 my-3 image-container">
-						<a href="blog">
-							<img src="/img/blog.png" class="image-fluid rounded" alt="叉燒包">
-							<p class="centered">Blog</p>	
-						</a>							
-					</div>
-					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 my-3 image-container">
-						<a href="/about_me/index.html">
-							<img src="/img/about_me.png" class="image-fluid rounded" alt="叉燒包">
-							<p class="centered">About Me</p>
-						</a>								
-					</div>
-					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 my-3 image-container">
-						<a href="/JSGame2/front-end/index.html">
-							<img src="/img/JSGame2.png" class="image-fluid rounded" alt="叉燒包">
-							<p class="centered">JSGame2</p>	
-						</a>
-							
-					</div>
-					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 my-3 image-container">
-						<a href="">
-							<img src="/img/blog.png" class="image-fluid rounded" alt="叉燒包">
-							<p class="centered">CanvasUI</p>	
-						</a>
-							
-					</div>
+				<div id="link-container" class="col-10 col-md-10 col-lg-10 col-xl-8 mx-auto my-2 p-0 rounded link-container row">
+					
+				</div>
+				<div id="about-me" class="col-10 col-md-10 col-lg-10 col-xl-8 mx-auto my-2 p-0 rounded link-container row">
+					Under maintenance. F5 to go back.
 				</div>
 			</div>
 			<div id="footer">
-				<p><span id="author">Author - Maxium</span><span id="last-update">Last Update - 21 Oct 2019</span></p>
+				<p><span id="author">Author - Maxium</span><span id="last-update">Last Update - 12 Jan 2020</span></p>
 			</div>
 	</div>
 	<script type="text/javascript">
-		// var pjax = new Pjax({
-		// 	selectors: [
-		// 		'div#content'
-		// 	],
-		// 	cacheBust: false,
-		// })
+		var functions = [
+			{
+				name: 'aboutMe',
+				function: function(){
+					$('div#link-container').css('display','none')
+					$('div#about-me').css('display','block')
+				}
+			},
+		]
+
+		function executeFunction(name){
+			let func = functions.filter(func=>func.name = name);
+			if(func.length==1){
+				func = func[0].function;
+				func();
+			}
+		}
+
+		$.getJSON('index.json', function(json){
+			for(let obj of json){
+				let div = $('<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 my-3 image-container">');
+				// let a = $('<a href="">');
+				let img = $('<img class="image-fluid rounded" alt="叉燒包">');
+				let p = $('<p class="centered"></p>');
+
+				img.attr('src', obj.img_src);
+				p.text(obj.name);
+
+				div.append(img)
+				div.append(p)
+
+				if(obj.href){
+					div.on('click',function(e){window.location.href=obj.href;});
+				} else if(obj.function){
+					div.on('click',function(e){executeFunction(obj.function)});
+				}
+				$('div#link-container').append(div);
+			}
+		});
+		
 	</script>
 </body>
 </html>

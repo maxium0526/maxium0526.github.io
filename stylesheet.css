@@ -44,11 +44,15 @@ a {
 	box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
 }
 
+#about-me{
+	display: none;
+}
+
 .image-container{
 	position: relative;
 	text-align: center;
 	color: white;
-
+	cursor: pointer;
 	
 }
 
