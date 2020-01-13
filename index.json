@@ -13,5 +13,10 @@
 		"name": "JSGame2",
 		"href": "/JSGame2/front-end/index.html",
 		"img_src": "/img/JSGame2.png"
+	},
+	{
+		"name": "MPI Time Table Generator",
+		"href": "/MPI-timetable-generator/index.html",
+		"img_src": "/img/MPI-timetable-generator.png"
 	}
 ]
