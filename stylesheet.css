@@ -48,6 +48,16 @@ a {
 	display: none;
 }
 
+#about-me>h4{
+	margin-top: 16px;
+	margin-bottom: 16px;
+	display: inline-block;
+}
+
+#about-me>*{
+	margin-left: 16px;
+}
+
 .image-container{
 	position: relative;
 	text-align: center;

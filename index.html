@@ -34,13 +34,22 @@
 						<img src="/img/author.png" width="100%">
 					</div>
 					<p class="h2 text-center">Welcome to Maxium's Website</p>
-					<a href="/about_me/index.html"><p class="text-center">About Me</p></a>
 				</div>
 				<div id="link-container" class="col-10 col-md-10 col-lg-10 col-xl-8 mx-auto my-2 p-0 rounded link-container row">
 					
 				</div>
 				<div id="about-me" class="col-10 col-md-10 col-lg-10 col-xl-8 mx-auto my-2 p-0 rounded link-container row">
-					Under maintenance. F5 to go back.
+					<h4>About Me</h4><br>
+					<a href="https://github.com/maxium0526">GitHub</a>
+					<br><br>
+					<p>Max</p>
+					<p>Birthday: 26 May</p>
+					<p>Undergraduate Student, may be appling master's degree</p>
+					<p>Interested Fields: Deep Learning, Programming</p>
+					<br>
+					<p>Back</p>
+
+
 				</div>
 			</div>
 			<div id="footer">
@@ -69,7 +78,6 @@
 		$.getJSON('index.json', function(json){
 			for(let obj of json){
 				let div = $('<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 my-3 image-container">');
-				// let a = $('<a href="">');
 				let img = $('<img class="image-fluid rounded" alt="叉燒包">');
 				let p = $('<p class="centered"></p>');
 
