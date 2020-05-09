@@ -52,7 +52,7 @@
 				<br><br>
 			</div>
 			<div id="footer">
-				<p><span id="author">Author - Maxium</span><span id="last-update">Last Update - 12 Jan 2020</span></p>
+				<p><span id="author">Author - Maxium</span><span id="last-update">Last Update -</span></p>
 			</div>
 	</div>
 	<script type="text/javascript">
@@ -74,7 +74,7 @@
 		}
 
 		$.getJSON('index.json', function(json){
-			for(let obj of json){
+			for(let obj of json.repos){
 				let div = $('<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 my-3 image-container">');
 				let img = $('<img class="image-fluid rounded" alt="叉燒包">');
 				let p = $('<p class="centered"></p>');
@@ -92,6 +92,7 @@
 				}
 				$('div#link-container').append(div);
 			}
+			$('#last-update').text('Last Update - ' + json.last_update);
 		});
 		
 	</script>
