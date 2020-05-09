@@ -45,17 +45,24 @@ a {
 }
 
 #about-me{
-	display: none;
+	display: block;
 }
 
 #about-me>h4{
-	margin-top: 16px;
+	padding-top: 16px;
 	margin-bottom: 16px;
-	display: inline-block;
+}
+
+#about-me>#author-img{
+	float: right;
+	padding-right: 32px;
+	width: 16rem;
 }
 
 #about-me>*{
 	margin-left: 16px;
+	padding-bottom: 16px;
+	margin-bottom: 0;
 }
 
 .image-container{
