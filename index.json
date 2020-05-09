@@ -18,5 +18,10 @@
 		"name": "MPI Time Table Generator",
 		"href": "/MPI-timetable-generator/index.html",
 		"img_src": "/img/MPI-timetable-generator.png"
+	},
+	{
+		"name": "Watch",
+		"href": "/watch/index.html",
+		"img_src": "/img/blank.png"
 	}
 ]
