@@ -24,6 +24,11 @@
 			"name": "Watch",
 			"href": "/watch/index.html",
 			"img_src": "/img/watch.png"
+		},
+		{
+			"name": "CanvasUI",
+			"href": "/CanvasUI/index.html",
+			"img_src": "/img/CanvasUI.png"
 		}
 	],
 	"last_update": "11 May 2020"
