@@ -8,7 +8,7 @@
 		{
 			"name": "About Me",
 			"img_src": "/img/about_me.png",
-			"function": "aboutMe"
+			"href": "/blog/about/"
 		},
 		{
 			"name": "JSGame2",
