@@ -3,37 +3,44 @@
 		{
 			"name": "Blog",
 			"href": "/blog",
-			"img_src": "/img/blog.png"
+			"img_src": "/img/blog.png",
+			"description": "My blog."
 		},
 		{
 			"name": "About Me",
 			"img_src": "/img/about_me.png",
-			"href": "/blog/about/"
+			"href": "/blog/about/",
+			"description": "Hello."
 		},
 		{
 			"name": "JSGame2",
 			"href": "/JSGame2/front-end/index.html",
-			"img_src": "/img/JSGame2.png"
+			"img_src": "/img/JSGame2.png",
+			"description": "A game engine based on JavaScript and HTML Canvas."
 		},
 		{
 			"name": "MPI Time Table Generator",
 			"href": "/MPI-timetable-generator/index.html",
-			"img_src": "/img/MPI-timetable-generator.png"
+			"img_src": "/img/MPI-timetable-generator.png",
+			"description": "Just a time table generator."
 		},
 		{
 			"name": "Watch",
 			"href": "/watch/index.html",
-			"img_src": "/img/watch.png"
+			"img_src": "/img/watch.png",
+			"description": "A programmable clock."
 		},
 		{
 			"name": "CanvasUI",
 			"href": "/CanvasUI/index.html",
-			"img_src": "/img/CanvasUI.png"
+			"img_src": "/img/CanvasUI.png",
+			"description": "Use a canvas to show UI."
 		},
 		{
 			"name": "Line Segments Intersection Detection",
 			"href": "/line-intersect/index.html",
-			"img_src": "/img/line-intersect.png"
+			"img_src": "/img/line-intersect.png",
+			"description": "Test if 2 line segments are intersected."
 		}
 	],
 	"last_update": "27 June 2020"
