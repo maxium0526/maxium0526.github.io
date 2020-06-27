@@ -33,9 +33,7 @@
 					</div>
 					<p class="h2 text-center">Welcome to Maxium's Website</p>
 				</div>
-				<div id="link-container" class="col-10 col-md-10 col-lg-10 col-xl-8 mx-auto mt-1 mb-4 p-0 rounded link-container row">
-					
-				</div>
+				<div id="link-container" class="col-10 col-md-10 col-lg-10 col-xl-8 mx-auto mt-1 mb-4 p-0 rounded link-container row"></div>
 				<br><br>
 			</div>
 			<div id="footer">
@@ -64,13 +62,16 @@
 			for(let obj of json.repos){
 				let div = $('<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 my-3 image-container">');
 				let img = $('<img class="image-fluid rounded" alt="叉燒包">');
-				let p = $('<p class="centered"></p>');
+				let p = $('<p class="name"></p>');
+				let dsp = $('<p class="description">No description.</p>');
 
 				img.attr('src', obj.img_src);
 				p.text(obj.name);
+				if(obj.description) dsp.text(obj.description);
 
 				div.append(img)
 				div.append(p)
+				div.append(dsp);
 
 				if(obj.href){
 					div.on('click',function(e){window.location.href=obj.href;});

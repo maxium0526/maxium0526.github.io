@@ -84,16 +84,32 @@ a {
 	box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
 }
 
-.image-container p {
+.name {
 	font-size: 20px;
 	color: #ffffff;
-}
-
-.centered {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	transition: top 0.25s;
+}
+
+.image-container:hover .name{
+	top:25%;
+}
+
+.description{
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	transition: top 0.25s, opacity 0.25s;
+}
+
+.image-container:hover .description{
+	top:55%;
+	opacity: 1;
 }
 
 #footer p{
