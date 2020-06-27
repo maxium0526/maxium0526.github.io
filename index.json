@@ -29,7 +29,12 @@
 			"name": "CanvasUI",
 			"href": "/CanvasUI/index.html",
 			"img_src": "/img/CanvasUI.png"
+		},
+		{
+			"name": "Line Segments Intersection Detection",
+			"href": "/line-intersect/index.html",
+			"img_src": "/img/line-intersect.png"
 		}
 	],
-	"last_update": "25 June 2020"
+	"last_update": "27 June 2020"
 }
