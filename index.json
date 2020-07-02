@@ -19,6 +19,18 @@
 			"description": "A game engine based on JavaScript and HTML Canvas."
 		},
 		{
+			"name": "Line Segments Intersection Detection",
+			"href": "/line-intersect/demo1.html",
+			"img_src": "/img/line-intersect.png",
+			"description": "Test if 2 line segments are intersected."
+		},
+		{
+			"name": "Rectangles Collision",
+			"href": "/line-intersect/demo3.html",
+			"img_src": "/img/rectangle-collision.png",
+			"description": "Rotated rectangles act like in real world!"
+		},
+		{
 			"name": "MPI Time Table Generator",
 			"href": "/MPI-timetable-generator/index.html",
 			"img_src": "/img/MPI-timetable-generator.png",
@@ -35,13 +47,7 @@
 			"href": "/CanvasUI/index.html",
 			"img_src": "/img/CanvasUI.png",
 			"description": "Use a canvas to show UI."
-		},
-		{
-			"name": "Line Segments Intersection Detection",
-			"href": "/line-intersect/index.html",
-			"img_src": "/img/line-intersect.png",
-			"description": "Test if 2 line segments are intersected."
 		}
 	],
-	"last_update": "27 June 2020"
+	"last_update": "3 July 2020"
 }
