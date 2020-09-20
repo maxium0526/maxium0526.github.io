@@ -1,6 +1,12 @@
 {
 	"repos":[
 		{
+			"name": "maxres",
+			"img_src": "/img/maxres.png",
+			"href": "https://github.com/maxium0526/maxres",
+			"description": "Anime Illustration super-resolution and denoising."
+		},
+		{
 			"name": "Blog",
 			"href": "/blog",
 			"img_src": "/img/blog.png",
@@ -49,5 +55,5 @@
 			"description": "Use a canvas to show UI."
 		}
 	],
-	"last_update": "3 July 2020"
+	"last_update": "20 September 2020"
 }
