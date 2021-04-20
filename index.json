@@ -6,12 +6,6 @@
 			"href": "https://github.com/maxium0526/maxres",
 			"description": "Anime Illustration super-resolution and denoising."
 		},
-		// {
-		// 	"name": "Blog",
-		// 	"href": "/blog",
-		// 	"img_src": "/img/blog.png",
-		// 	"description": "My blog."
-		// },
 		{
 			"name": "About Me",
 			"img_src": "/img/about_me.png",
